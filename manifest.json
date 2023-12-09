@@ -1,0 +1,23 @@
+{
+    "manifest_version":3,
+    "name" : "Uwufier Lite",
+    "description" : "Convert selected test to Uwu Language!",
+    "version" : "0.0.1",
+    "permissions":["activeTab", "scripting", "tabs"],
+    "action": {},
+    "background" :{
+        "service_worker" : "bg.js"
+    },
+    "host_permissions": ["<all_urls>"],
+    "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Ctrl+B",
+        "mac": "Command+B"
+      }
+    }
+  },
+  "externally_connectable": {
+        "matches": ["<all_urls>"]
+    }
+}
